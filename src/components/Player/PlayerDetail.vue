@@ -1,3 +1,92 @@
+<script setup>
+import { computed } from 'vue';
+import { useRoute } from 'vue-router';
+const currentPlayer = computed(() =>
+  players.find((player) => player.id == playerId)
+);
+const route = useRoute();
+
+// Access the id from the route
+const playerId = route.params.id;
+const players = [
+  {
+    id: 1,
+    name: "Shahid Afridi",
+    match: 27,
+    inns: 48,
+    runs: 1716,
+    hs: 156,
+    avg: 36.51,
+    fifties: 8,
+    hundreds: 5,
+    fours: 220,
+    sixes: 54,
+    regInTeam: "02/10/2024",
+    image: 'https://shyambhatia.com/wp-content/uploads/2022/06/Shahid-Afridi.png'
+  },
+  {
+    id: 2,
+    name: "Virat Kohli",
+    match: 111,
+    inns: 201,
+    runs: 8456,
+    hs: 183,
+    avg: 59.33,
+    fifties: 44,
+    hundreds: 28,
+    fours: 750,
+    sixes: 125,
+    regInTeam: "01/11/2020",
+    image: 'https://shyambhatia.com/wp-content/uploads/2022/06/virat-kohli.png'
+  },
+  {
+    id: 3,
+    name: "Chris Gayle",
+    match: 103,
+    inns: 102,
+    runs: 7432,
+    hs: 215,
+    avg: 40.2,
+    fifties: 20,
+    hundreds: 25,
+    fours: 500,
+    sixes: 350,
+    regInTeam: "03/15/2018",
+    image: 'https://shyambhatia.com/wp-content/uploads/2022/06/chris-gayle.png'
+  },
+  {
+    id: 4,
+    name: "AB de Villiers",
+    match: 110,
+    inns: 100,
+    runs: 7800,
+    hs: 162,
+    avg: 52.5,
+    fifties: 35,
+    hundreds: 22,
+    fours: 650,
+    sixes: 200,
+    regInTeam: "05/25/2017",
+    image: 'https://shyambhatia.com/wp-content/uploads/2022/06/ab-de-villiers.png'
+  },
+  {
+    id: 5,
+    name: "Kane Williamson",
+    match: 75,
+    inns: 125,
+    runs: 5500,
+    hs: 148,
+    avg: 45.8,
+    fifties: 20,
+    hundreds: 15,
+    fours: 400,
+    sixes: 50,
+    regInTeam: "07/12/2016",
+    image: 'https://shyambhatia.com/wp-content/uploads/2022/06/kane-williamson.png'
+  },
+];
+
+</script>
 <template>
   <div class="">
 
@@ -13,8 +102,10 @@
                     <div
                       class="gdlr-core-title-item gdlr-core-item-pdb clearfix  gdlr-core-left-align gdlr-core-title-item-caption-top gdlr-core-item-pdlr">
                       <div class="gdlr-core-title-item-title-wrap ">
-                        <h3 class="gdlr-core-title-item-title gdlr-core-skin-title " style="font-size: 26px ;">James
-                          Harden<span class="gdlr-core-title-item-title-divider gdlr-core-skin-divider"></span></h3>
+                        <h3 class="gdlr-core-title-item-title gdlr-core-skin-title " style="font-size: 26px ;">{{
+                          currentPlayer.name }}<span
+                            class="gdlr-core-title-item-title-divider gdlr-core-skin-divider"></span>
+                        </h3>
                       </div>
                     </div>
                   </div>
@@ -23,8 +114,7 @@
                       <div class="gdlr-core-text-box-item-content">
                         <div class="sportspress sp-widget-align-none">
                           <div class="sp-template sp-template-player-photo sp-template-photo sp-player-photo">
-                            <img width="213" height="300"
-                              src="https://max-themes.net/demos/bigslam/bigslam/upload/player-6-213x300.jpg"
+                            <img width="213" height="300" :src="currentPlayer.image"
                               class="attachment-sportspress-fit-medium size-sportspress-fit-medium wp-post-image"
                               alt="">
                           </div>
@@ -32,23 +122,21 @@
                             <div class="sp-list-wrapper">
                               <dl class="sp-player-details">
                                 <dt>#</dt>
-                                <dd>05</dd>
+                                <dd>{{ currentPlayer.id }}</dd>
                                 <dt>Name</dt>
-                                <dd>James Harden</dd>
-                                <dt>Nationality</dt>
-                                <dd><img
-                                    src="https://max-themes.net/demos/bigslam/bigslam/plugins/sportspress/assets/images/flags/svk.png"
-                                    alt="svk"> Slovakia</dd>
-                                <dt>Position</dt>
-                                <dd>Forward-Center</dd>
-                                <dt>Height</dt>
-                                <dd>6"11</dd>
-                                <dt>Weight</dt>
-                                <dd>270</dd>
-                                <dt>Current Team</dt>
-                                <dd>Big Slam</dd>
-                                <dt>Past Teams</dt>
-                                <dd>Big Slam</dd>
+                                <dd>{{ currentPlayer.name }}</dd>
+                                <dt>Matches</dt>
+                                <dd>{{ currentPlayer.match }}</dd>
+                                <dt>Innings</dt>
+                                <dd>{{ currentPlayer.inns }}</dd>
+                                <dt>Runs</dt>
+                                <dd>{{ currentPlayer.runs }}</dd>
+                                <dt>High Score</dt>
+                                <dd>{{ currentPlayer.hs }}</dd>
+                                <dt>Average</dt>
+                                <dd>{{ currentPlayer.avg }}</dd>
+                                <!-- <dt>Fifties</dt>
+                                <dd>{{ currentPlayer.fifties }}</dd> -->
                               </dl>
                             </div>
                           </div>
@@ -73,10 +161,10 @@
                       </h3>
                       <p class="countdown sp-countdown long-countdown">
                         <time datetime="2022-03-10 12:59:30" data-countdown="2022/03/10 12:59:30">
-                          <span>839 <small>days</small></span>
-                          <span>03 <small>hrs</small></span>
-                          <span>08 <small>mins</small></span>
-                          <span>54 <small>secs</small></span>
+                          <span>{{ currentPlayer.hundreds }} <small>100s</small></span>
+                          <span>{{ currentPlayer.fifties }} <small>50s</small></span>
+                          <span>{{ currentPlayer.sixes }} <small>6s</small></span>
+                          <span>{{ currentPlayer.fours }} <small>4s</small></span>
                         </time>
                       </p>
                     </div>
