@@ -12,7 +12,7 @@ import TopTeams from "@/components/TopTeams.vue";
 
   <!-- START Homepage REVOLUTION SLIDER 6.1.5 -->
   <p class="rs-p-wp-fix"></p>
-  <rs-module-wrap id="rev_slider_1_1_wrapper" data-source="gallery">
+  <rs-module-wrap id="rev_slider_1_1_wrapper" data-source="gallery"
     style="background:#212121;padding:0;margin:0px auto;margin-top:0;margin-bottom:0;">
     <rs-module id="rev_slider_1_1" style="display:none;" data-version="6.1.5">
       <rs-slides>

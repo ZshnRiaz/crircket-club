@@ -2,7 +2,7 @@
   <div class="gdlr-core-pbf-wrapper " style="padding: 70px 0px 10px 0px;">
     <div class="gdlr-core-pbf-background-wrap">
       <div class="gdlr-core-pbf-background gdlr-core-parallax gdlr-core-js"
-        style="background-image: url('https://max-themes.net/demos/bigslam/bigslam/upload/hp-bg-table-2.jpg') ;background-size: cover ;background-position: center ;"
+        style="background-image: url('https://img.freepik.com/free-photo/cricket-match-with-player_23-2151702185.jpg?t=st=1734032152~exp=1734035752~hmac=94d4eb8a904dc54daf5d4da6df670a1ab121becde1c394650c35563d30133fcd&w=996') ;background-size: cover ;background-position: center ;"
         data-parallax-speed="0.2"></div>
     </div>
     <div class="gdlr-core-pbf-wrapper-content gdlr-core-js ">
