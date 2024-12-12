@@ -42,22 +42,24 @@
           <div class="bigslam-navigation bigslam-item-pdlr clearfix ">
             <div class="bigslam-main-menu" id="bigslam-main-menu">
               <ul id="menu-main-navigation-1" class="sf-menu">
-                <li class="menu-item menu-item-home current-menu-item bigslam-normal-menu"><a href="index.html">Home</a>
+                <li class="menu-item menu-item-home current-menu-item bigslam-normal-menu"><router-link
+                    :to="'/'">Home</router-link>
                 </li>
                 <li class="menu-item menu-item-has-children bigslam-normal-menu"><a href="schedule.html"
-                    class="sf-with-ul-pre">Schedule</a>
+                    class="sf-with-ul-pre">Our Team</a>
                   <ul class="sub-menu">
-                    <li class="menu-item" data-size="60"><a href="schedule.html">Schedule – Default Style</a></li>
-                    <li class="menu-item" data-size="60"><a href="schedule-featured-style.html">Schedule – Featured
-                        Style</a></li>
-                    <li class="menu-item" data-size="60"><a href="schedule-medium-style.html">Schedule – Medium
+                    <li class="menu-item" data-size="60"><router-link :to="'/team-statics'">Team Statics</router-link>
+                    </li>
+                    <li class="menu-item" data-size="60"><router-link :to="'/player-list'">Player Gallery</router-link>
+                    </li>
+                    <!-- <li class="menu-item" data-size="60"><a href="schedule-medium-style.html">Schedule – Medium
                         Style</a></li>
                     <li class="menu-item" data-size="60"><a href="schedule-widget-style.html">Schedule – Widget
-                        Style</a></li>
+                        Style</a></li> -->
                   </ul>
                 </li>
-                <li class="menu-item menu-item-has-children bigslam-normal-menu"><a
-                    href="player-list-default-style.html" class="sf-with-ul-pre">Players</a>
+                <li style="visibility: hidden" class="menu-item menu-item-has-children bigslam-normal-menu"><a
+                    href="player-list-default-style.html" class="sf-with-ul-pre">Our Team</a>
                   <ul class="sub-menu">
                     <li class="menu-item" data-size="60"><a href="player-list-default-style.html">Player List –
                         Default Style</a></li>
@@ -69,8 +71,9 @@
                         2</a></li>
                   </ul>
                 </li>
-                <li class="menu-item  bigslam-normal-menu"><a href="big-slam.html">Our Team</a></li>
-                <li class="menu-item menu-item-has-children bigslam-normal-menu"><a href="#"
+                <li style="visibility: hidden" class="menu-item  bigslam-normal-menu"><a href="big-slam.html">Our
+                    Team</a></li>
+                <li style="visibility: hidden" class="menu-item menu-item-has-children bigslam-normal-menu"><a href="#"
                     class="sf-with-ul-pre">SportsPress</a>
                   <ul class="sub-menu">
                     <li class="menu-item menu-item-has-children" data-size="60"><a href="#"
@@ -97,7 +100,7 @@
                     <li class="menu-item" data-size="60"><a href="league-table.html">League Table</a></li>
                   </ul>
                 </li>
-                <li class="menu-item menu-item-has-children bigslam-normal-menu"><a href="#"
+                <li style="visibility: hidden" class="menu-item menu-item-has-children bigslam-normal-menu"><a href="#"
                     class="sf-with-ul-pre">Pages</a>
                   <ul class="sub-menu">
                     <li class="menu-item menu-item-has-children" data-size="60"><a href="#"
@@ -170,8 +173,8 @@
                     <li class="menu-item" data-size="60"><a href="404.html">404 Page</a></li>
                   </ul>
                 </li>
-                <li class="menu-item menu-item-has-children bigslam-normal-menu"><a href="blog-full-right-sidebar.html"
-                    class="sf-with-ul-pre">Blog</a>
+                <li style="visibility: hidden" class="menu-item menu-item-has-children bigslam-normal-menu"><a
+                    href="blog-full-right-sidebar.html" class="sf-with-ul-pre">Blog</a>
                   <ul class="sub-menu">
                     <li class="menu-item menu-item-has-children" data-size="60"><a
                         href="blog-full-right-sidebar-with-frame.html" class="sf-with-ul-pre">Blog Full</a>
@@ -209,7 +212,7 @@
                     <li class="menu-item" data-size="60"><a href="standard-post-type.html">Single Posts</a></li>
                   </ul>
                 </li>
-                <li class="menu-item menu-item-has-children bigslam-mega-menu"><a href="#"
+                <li style="visibility: hidden" class="menu-item menu-item-has-children bigslam-mega-menu"><a href="#"
                     class="sf-with-ul-pre">Features</a>
                   <div class="sf-mega sf-mega-full">
                     <ul class="sub-menu">
