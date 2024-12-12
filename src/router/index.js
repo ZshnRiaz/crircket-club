@@ -12,18 +12,17 @@ const router = createRouter({
     {
       path: '/player-detail/:id',
       name: 'player-detail',
-      // route level code-splitting
-      // this generates a separate chunk (About.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
       component: () => import('../views/Players/PlayerDetail.vue'),
     },
     {
       path: '/player-list',
       name: 'player-list',
-      // route level code-splitting
-      // this generates a separate chunk (About.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
       component: () => import('../views/Players/PlayerList.vue'),
+    },
+    {
+      path: '/team-statics',
+      name: 'team-statics',
+      component: () => import('../views/Club/Club.vue'),
     },
   ],
 })
