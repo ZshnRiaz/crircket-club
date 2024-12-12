@@ -2,7 +2,7 @@
   <div class="gdlr-core-pbf-wrapper " style="padding: 75px 0px 30px 0px;" data-skin="Player Carousel">
     <div class="gdlr-core-pbf-background-wrap">
       <div class="gdlr-core-pbf-background gdlr-core-parallax gdlr-core-js"
-        style="background-image: url('https://max-themes.net/demos/bigslam/bigslam/uploadhp-bg-player.jpg') ;background-size: cover ;background-position: center ;"
+        style="background-image: url('https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.facebook.com%2FPakistanCricketBoard%2Fphotos%2Fa.301093479963991%2F6627091044030838%2F%3Ftype%3D3&psig=AOvVaw0pOKrgweAXyFa77ql6125f&ust=1734087365460000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCMCD-LiMoooDFQAAAAAdAAAAABAE') ;background-size: cover ;background-position: center ;"
         data-parallax-speed="0.1"></div>
     </div>
     <div class="gdlr-core-pbf-wrapper-content gdlr-core-js ">
@@ -27,7 +27,7 @@
                       <a href="#"><img src="https://max-themes.net/demos/bigslam/bigslam/upload/player-1-400x564.jpg"
                           width="600" height="846" alt=""></a>
                     </div>
-                    <h3 class="gdlr-core-sp-player-title"><a href="#">Michael Jorden</a></h3>
+                    <h3 class="gdlr-core-sp-player-title"><a href="#">Shahid Afridi</a></h3>
                   </div>
                 </li>
                 <li class="gdlr-core-item-mglr">
@@ -36,7 +36,7 @@
                       <a href="#"><img src="https://max-themes.net/demos/bigslam/bigslam/upload/player-2-400x564.jpg"
                           width="600" height="846" alt=""></a>
                     </div>
-                    <h3 class="gdlr-core-sp-player-title"><a href="#">Paul Frank</a></h3>
+                    <h3 class="gdlr-core-sp-player-title"><a href="#">Naseem Shah</a></h3>
                   </div>
                 </li>
                 <li class="gdlr-core-item-mglr">
@@ -45,7 +45,7 @@
                       <a href="#"><img src="https://max-themes.net/demos/bigslam/bigslam/upload/player-3-400x564.jpg"
                           width="600" height="846" alt=""></a>
                     </div>
-                    <h3 class="gdlr-core-sp-player-title"><a href="#">Ricardo Spacey</a></h3>
+                    <h3 class="gdlr-core-sp-player-title"><a href="#">Babar Azam</a></h3>
                   </div>
                 </li>
                 <li class="gdlr-core-item-mglr">
@@ -54,7 +54,7 @@
                       <a href="#"><img src="https://max-themes.net/demos/bigslam/bigslam/upload/player-4-400x564.jpg"
                           width="600" height="846" alt=""></a>
                     </div>
-                    <h3 class="gdlr-core-sp-player-title"><a href="#">Oscar Robertson</a></h3>
+                    <h3 class="gdlr-core-sp-player-title"><a href="#">Shan Masood</a></h3>
                   </div>
                 </li>
                 <li class="gdlr-core-item-mglr">
@@ -63,7 +63,7 @@
                       <a href="#"><img src="https://max-themes.net/demos/bigslam/bigslam/upload/player-5-400x564.jpg"
                           width="600" height="846" alt=""></a>
                     </div>
-                    <h3 class="gdlr-core-sp-player-title"><a href="#">Kevin Durant</a></h3>
+                    <h3 class="gdlr-core-sp-player-title"><a href="#">Kamran Ghulam</a></h3>
                   </div>
                 </li>
               </ul>

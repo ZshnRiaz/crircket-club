@@ -13,7 +13,7 @@ import Header from './components/MobileHeader.vue';
     <Header></Header>
     <BigHeader></BigHeader>
     <main>
-      <div class="bigslam-page-wrapper" id="bigslam-page-wrapper">
+      <div class="bigslam-page-wrapper" id="CRICKET CLUB">
         <div class="gdlr-core-page-builder-body">
           <div class="gdlr-core-pbf-wrapper " style="padding: 0px 0px 0px 0px;">
             <div class="gdlr-core-pbf-background-wrap"></div>
